@@ -1,0 +1,9 @@
+react app structure
+
+1. package json: contains dependencies versions and scripts 
+2. public: inside this we index.html which is very imp. file and inside that we div with id root in which whatever components we will create it will dynamically added to it.
+
+3. node modules; contains package which we install
+
+4. index.js: entry file of react contains <App \> component which is root component
+

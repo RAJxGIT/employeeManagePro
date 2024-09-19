@@ -1,0 +1,206 @@
+/* Import Bootstrap's base styles */
+@import "bootstrap/dist/css/bootstrap.min.css";
+
+/* Custom styles for ListEmployeeComponent */
+.container {
+  /* Add some padding and a max-width for a more centered look */
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.text-center {
+  /* Enhance the title with some spacing and a border-bottom */
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #007bff; /* Bootstrap primary color */
+  font-weight: bold;
+}
+
+.table-border {
+  /* Add Bootstrap table styles with custom borders */
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+
+.table-border th, .table-border td {
+  border: 1px solid #dee2e6; /* Light gray border */
+  padding: 10px;
+  text-align: left;
+}
+
+.table-border th {
+  background-color: #f8f9fa; /* Light background for table headers */
+}
+
+.table-border tr:nth-child(even) {
+  background-color: #f2f2f2; /* Zebra striping for table rows */
+}
+
+.table-border tr:hover {
+  background-color: #e9ecef; /* Light blue hover effect for rows */
+}
+/* Styles for HeaderComponent */
+header {
+  background-color: #343a40; /* Dark background for the header */
+  padding: 10px 0;
+}
+
+.navbar-expand {
+  display: flex;
+  justify-content: center;
+}
+
+.navbar-brand {
+  color: #ffffff; /* White text color for the brand */
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.navbar-brand:hover {
+  color: #e9ecef; /* Light gray text color on hover */
+}
+
+/* Styles for FooterComponent */
+.footer {
+  background-color: grey; /* Dark background for the footer */
+  color: #ffffff; /* White text color */
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+.add-employee-button {
+  margin-top: 10px; /* Adds space above the button */
+  margin-bottom: 10px; /* Adds space below the button */
+  padding: 10px 20px; /* Adjusts padding for top/bottom and left/right */
+  background-color: #343a40; /* Dark gray background */
+  color: #ffffff; /* White text color */
+  border: none; /* Removes the default border */
+  border-radius: 0.25rem; /* Rounded corners */
+  font-size: 1rem; /* Adjust font size */
+  font-weight: 600; /* Slightly bold text */
+  text-align: center; /* Centers the text */
+  text-decoration: none; /* Removes underline from links */
+  display: inline-block; /* Allows setting width and height */
+  cursor: pointer; /* Changes cursor to pointer on hover */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+.add-employee-button:hover {
+  background-color: #495057; /* Lighter gray on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds shadow on hover */
+}
+/* Custom styles for form elements */
+.form-control {
+  border-radius: 0.25rem; /* Customize border radius if needed */
+  border-color: #ced4da; /* Change border color */
+}
+
+.form-group .form-label {
+  font-weight: bold; /* Make labels bold */
+  color: #333; /* Change label color */
+}
+
+.card-body {
+  background-color: #f8f9fa; /* Customize background color */
+  padding: 1.5rem; /* Adjust padding */
+  border-radius: 0.5rem; /* Add rounded corners */
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075); /* Add shadow */
+}
+
+/* Custom button styles */
+.save-employee-button {
+  margin-top: 10px; /* Adds space above the button */
+  margin-bottom: 10px; /* Adds space below the button */
+  padding: 10px 20px; /* Adjust padding for top/bottom and left/right */
+  background-color: #007bff; /* Blue background */
+  color: #ffffff; /* White text color */
+  border: none; /* Removes the default border */
+  border-radius: 0.25rem; /* Rounded corners */
+  font-size: 1rem; /* Adjust font size */
+  font-weight: 600; /* Slightly bold text */
+  text-align: center; /* Centers the text */
+  text-decoration: none; /* Removes underline from links */
+  display: inline-block; /* Allows setting width and height */
+  cursor: pointer; /* Changes cursor to pointer on hover */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+.save-employee-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds shadow on hover */
+}
+.cancel-employee-button {
+  margin-top: 10px; /* Adds space above the button */
+  margin-bottom: 10px; /* Adds space below the button */
+  padding: 10px 20px; /* Adjust padding for top/bottom and left/right */
+  background-color: #6c757d; /* Gray background */
+  color: #ffffff; /* White text color */
+  border: none; /* Removes the default border */
+  border-radius: 0.25rem; /* Rounded corners */
+  font-size: 1rem; /* Adjust font size */
+  font-weight: 600; /* Slightly bold text */
+  text-align: center; /* Centers the text */
+  text-decoration: none; /* Removes underline from links */
+  display: inline-block; /* Allows setting width and height */
+  cursor: pointer; /* Changes cursor to pointer on hover */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+.cancel-employee-button:hover {
+  background-color: #5a6268; /* Darker gray on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds shadow on hover */
+}
+.update-button {
+  margin-top: 10px; /* Adds space above the button */
+  margin-bottom: 10px; /* Adds space below the button */
+  padding: 10px 20px; /* Adjust padding for top/bottom and left/right */
+  background-color: #007bff; /* Blue background */
+  color: #ffffff; /* White text color */
+  border: none; /* Removes the default border */
+  border-radius: 0.25rem; /* Rounded corners */
+  font-size: 1rem; /* Adjust font size */
+  font-weight: 600; /* Slightly bold text */
+  text-align: center; /* Centers the text */
+  text-decoration: none; /* Removes underline from links */
+  display: inline-block; /* Allows setting width and height */
+  cursor: pointer; /* Changes cursor to pointer on hover */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+.update-button:hover {
+ /* Darker blue on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds shadow on hover */
+}
+
+.delete-employee{
+   /* Adds space above the button */
+ /* Adds space below the button */
+  /* Adjust padding for top/bottom and left/right */
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+  margin-left: 5px;
+  background-color: red; /* Blue background */
+  color: #ffffff; /* White text color */
+  border: none; /* Removes the default border */
+  border-radius: 0.25rem; /* Rounded corners */
+  font-size: 1rem; /* Adjust font size */
+  font-weight: 600; /* Slightly bold text */
+  text-align: center; /* Centers the text */
+  text-decoration: none; /* Removes underline from links */
+  display: inline-block; /* Allows setting width and height */
+  cursor: pointer; /* Changes cursor to pointer on hover */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+
+}
+.delete-employee:hover {
+  /* Darker blue on hover */
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds shadow on hover */
+ }
